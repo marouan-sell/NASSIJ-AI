@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASSIJ AI MOROCCO | The Art of Moroccan Caftan, Reimagined with AI</title>
+  <meta name="description" content="Experience the pinnacle of Moroccan craftsmanship. Create your bespoke, made-to-measure caftan using artificial intelligence, while directly supporting master artisans in Tangier and Fez.">
+  
+  <!-- Favicon Official Rosette Emblem -->
+  <link rel="icon" type="image/png" href="logo-emblem.png">
+
+  <!-- Google Fonts: Inter Tight, Inter, Caveat, Amiri, Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Caveat:wght@600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- ScrollCraft Engine Stylesheet -->
+  <link rel="stylesheet" href="scrollcraft.css">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ScrollCraft Imperial Gold Progress Bar -->
+  <div class="sc-progress-bar" data-sc-progress aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       Site Header & Navigation (Issue 01)
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" id="brand-logo" aria-label="NASSIJ AI Morocco Homepage">
+        <img src="logo.png" alt="NASSIJ AI Morocco" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="collection.html" class="nav-link" data-i18n="nav_discover">Discover Caftans</a>
+        <a href="#ai-designer" class="nav-link" data-i18n="nav_designer">AI Designer</a>
+        <a href="#artisans" class="nav-link" data-i18n="nav_artisans">Our Artisans</a>
+        <a href="museum.html" class="nav-link" data-i18n="nav_museum">Heritage Museum</a>
+        <a href="#sustainability" class="nav-link" data-i18n="nav_about">About Us</a>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+        <!-- Language Switcher Button -->
+        <button class="lang-toggle" id="lang-toggle-btn" aria-label="Switch Language / تغيير اللغة">
+          <!-- Moroccan flag emoji / SVG -->
+          <svg class="flag-icon" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+            <rect width="900" height="600" fill="#c1272d"/>
+            <polygon points="450,165 478,252 569,252 495,305 524,393 450,340 376,393 405,305 331,252 422,252" fill="none" stroke="#006233" stroke-width="16"/>
+          </svg>
+          <span id="lang-btn-text">العربية</span>
+        </button>
+
+        <button class="btn-login" id="btn-login-modal" data-i18n="nav_login">Sign In</button>
+        <a href="#ai-designer" class="btn-primary" id="btn-get-started">
+          <span data-i18n="nav_cta">Get Started</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+    
+    <!-- Hero Section (Issue 02: Reelmark Arched 3D Hero Carousel) -->
+    <section id="hero" class="hero-section" data-sc-act="flow">
+      <div class="hero-frame-container" id="hero-frame">
+        <!-- Headline -->
+        <div class="hero-header-wrap" data-sc-in>
+          <h1 class="hero-headline">
+            <span class="headline-line" data-i18n="hero_title_1">The Art of Moroccan Caftan,</span>
+            <span class="headline-line highlight-gold" data-i18n="hero_title_2">Reimagined with AI.</span>
+          </h1>
+          <p class="hero-subline" data-i18n="hero_sub">
+            Experience the pinnacle of Moroccan craftsmanship. Create your bespoke, made-to-measure caftan using artificial intelligence, while directly supporting the master artisans who preserve our ancestral heritage.
+          </p>
+        </div>
+
+        <!-- Handwritten Annotation: Woven with Heritage -->
+        <div class="annotation annotation-right" id="anno-woven" data-sc-parallax="0.12">
+          <span class="handwritten-text" data-i18n="note_woven">Woven with heritage</span>
+          <svg class="hand-arrow hand-arrow-down" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 10 C 35 25, 45 40, 48 58" stroke="#08482D" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <path d="M40 50 L 48 60 L 56 50" stroke="#08482D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+
+        <!-- Handwritten Annotation: From Heritage Authenticity to Future Innovation -->
+        <div class="annotation annotation-left" id="anno-hand" data-sc-parallax="-0.08">
+          <span class="handwritten-text" data-i18n="note_hand">From Heritage Authenticity to Future Innovation</span>
+          <svg class="hand-arrow hand-arrow-right" viewBox="0 0 90 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 25 C 35 30, 60 25, 75 16" stroke="#08482D" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+            <path d="M65 10 L 78 15 L 68 25" stroke="#08482D" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+
+        <!-- Arched 3D Cylindrical Carousel Viewport -->
+        <div class="hero-carousel-viewport" id="carousel-viewport" role="region" aria-label="Curved Caftan Carousel">
+          <div class="carousel-track" id="carousel-track">
+            <!-- 14 Cards dynamically rendered and animated in script.js -->
+          </div>
+        </div>
+
+        <!-- Hero Bottom Action Button -->
+        <div class="hero-cta-wrap">
+          <div class="cta-ring-dashed">
+            <a href="#ai-designer" class="btn-hero-cta" id="btn-hero-design" data-sc-magnet="0.25">
+              <span data-i18n="hero_cta">Design Your Caftan</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- AI Caftan Designer Section (Issue 04: Interactive Prototype Engine) -->
+    <section id="ai-designer" class="designer-section" data-sc-act="flow">
+      <div class="container">
+        <div class="designer-grid">
+          
+          <!-- Left Column: Configurator Form -->
+          <div class="designer-form-wrap" data-sc-in data-sc-parallax="-0.03">
+            <span class="section-label" data-i18n="designer_label">AI CAFTAN DESIGNER</span>
+            <h2 class="section-title" data-i18n="designer_title">Your Imagination, Our Heritage.</h2>
+            <p class="section-desc" data-i18n="designer_desc">
+              Create your unique caftan by combining traditional Moroccan inspiration with modern AI technology. Customize every detail to match your style, occasion, and heritage.
+            </p>
+
+            <form class="designer-form" id="ai-designer-form" onsubmit="return false;">
+              
+              <!-- Color Palette Field with 8 Royal Swatches -->
+              <div class="form-group">
+                <label class="form-label">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a10 10 0 0 0 0 20v-2a8 8 0 0 1 0-16V2z"></path></svg>
+                  <span data-i18n="field_color">Color Palette</span>
+                </label>
+                <div class="color-swatches-row" id="color-swatches">
+                  <button type="button" class="color-swatch-btn active" data-color="emerald" style="--swatch-color: #08482D;" title="Royal Emerald"></button>
+                  <button type="button" class="color-swatch-btn" data-color="blue" style="--swatch-color: #1C3B6E;" title="Ocean Blue"></button>
+                  <button type="button" class="color-swatch-btn" data-color="burgundy" style="--swatch-color: #6B1D2F;" title="Burgundy Elegance"></button>
+                  <button type="button" class="color-swatch-btn" data-color="champagne" style="--swatch-color: #D4AF37;" title="Golden Champagne"></button>
+                  <button type="button" class="color-swatch-btn" data-color="ivory" style="--swatch-color: #F4EFE6;" title="Ivory Grace"></button>
+                  <button type="button" class="color-swatch-btn" data-color="ruby" style="--swatch-color: #8A1C2C;" title="Imperial Ruby"></button>
+                  <button type="button" class="color-swatch-btn" data-color="rosegold" style="--swatch-color: #C88278;" title="Rose Gold Majorelle"></button>
+                  <button type="button" class="color-swatch-btn" data-color="grey" style="--swatch-color: #9E9E9E;" title="Silver Grey"></button>
+                </div>
+              </div>
+
+              <!-- Row 1: Occasion & Silhouette Style -->
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label class="form-label" for="select-occasion">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <span data-i18n="field_occasion">Occasion</span>
+                  </label>
+                  <div class="select-wrap">
+                    <select id="select-occasion" class="form-select">
+                      <option value="wedding" data-i18n="opt_wedding">Royal Wedding (3arras)</option>
+                      <option value="eid" data-i18n="opt_eid">Eid & Religious Celebration</option>
+                      <option value="gala" data-i18n="opt_gala">Diplomatic & Haute Couture Gala</option>
+                      <option value="henna" data-i18n="opt_henna">Henna Ceremony & Traditions</option>
+                      <option value="festive" data-i18n="opt_festive">Caftan Fashion Week</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="select-style">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path></svg>
+                    <span data-i18n="field_style">Silhouette Style</span>
+                  </label>
+                  <div class="select-wrap">
+                    <select id="select-style" class="form-select">
+                      <option value="takchita" data-i18n="opt_takchita">Traditional Takchita Medfoun</option>
+                      <option value="royal_fassi" data-i18n="opt_royal_fassi">Royal Fassi Two-Piece</option>
+                      <option value="modern_slim" data-i18n="opt_modern_slim">Contemporary Sleek Caftan</option>
+                      <option value="majestic_cape" data-i18n="opt_majestic_cape">Imperial Caftan with Velvet Cape</option>
+                      <option value="princess" data-i18n="opt_princess">Princess Flared Silhouette</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 2: Noble Fabric & Embroidery School -->
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label class="form-label" for="select-fabric">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    <span data-i18n="field_fabric">Noble Fabric & Textile</span>
+                  </label>
+                  <div class="select-wrap">
+                    <select id="select-fabric" class="form-select">
+                      <option value="mobra" data-i18n="opt_mobra">Pure Mobra Silk Velvet</option>
+                      <option value="duchesse" data-i18n="opt_duchesse">Italian Duchesse Silk Satin</option>
+                      <option value="brocade" data-i18n="opt_brocade">Imperial Fassi Brocade (Bencherif)</option>
+                      <option value="crepe" data-i18n="opt_crepe">Organza & Crêpe de Soie</option>
+                      <option value="mlifa" data-i18n="opt_mlifa">Cashmere-Wool Mlifa</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="select-embroidery">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                    <span data-i18n="field_embroidery">Embroidery School</span>
+                  </label>
+                  <div class="select-wrap">
+                    <select id="select-embroidery" class="form-select">
+                      <option value="tarz_fassi" data-i18n="opt_tarz_fassi">Tarz Fassi (Geometric Counted Thread)</option>
+                      <option value="tarz_rbati" data-i18n="opt_tarz_rbati">Tarz Rbati (Silk Satin Floral Stitch)</option>
+                      <option value="majboud" data-i18n="opt_majboud">Majboud (Pure Gold Thread)</option>
+                      <option value="zwak" data-i18n="opt_zwak">Zwak Maâlem (Handmade Sfifa & Majboud)</option>
+                      <option value="tarz_chamali" data-i18n="opt_tarz_chamali">Tarz Chamali Northern Floral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 3: Mdamma Belt & Sleeve Cut -->
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label class="form-label" for="select-mdamma">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 12h8"></path></svg>
+                    <span data-i18n="field_mdamma">Mdamma (Belt) Craft</span>
+                  </label>
+                  <div class="select-wrap">
+                    <select id="select-mdamma" class="form-select">
+                      <option value="mdamma_gold" data-i18n="opt_mdamma_gold">Hand-Engraved Royal Gold Belt</option>
+                      <option value="mdamma_velvet" data-i18n="opt_mdamma_velvet">Gold Majboud Velvet Belt</option>
+                      <option value="mdamma_brocade" data-i18n="opt_mdamma_brocade">Silk Brocade with Sfifa</option>
+                      <option value="mdamma_silver" data-i18n="opt_mdamma_silver">Contemporary Fine Silver</option>
+                      <option value="mdamma_mjadel" data-i18n="opt_mdamma_mjadel">Hand-Braided Silk Mjadel</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="select-sleeves">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 14l6-6 4 4 6-6"></path></svg>
+                    <span data-i18n="field_sleeves">Sleeve & Cut Silhouette</span>
+                  </label>
+                  <div class="select-wrap">
+                    <select id="select-sleeves" class="form-select">
+                      <option value="sleeve_bell" data-i18n="opt_sleeve_bell">Imperial Flared Bell Sleeves</option>
+                      <option value="sleeve_fitted" data-i18n="opt_sleeve_fitted">Classic Fitted with Silk Aqaad</option>
+                      <option value="sleeve_cape" data-i18n="opt_sleeve_cape">Royal Slit Cape Sleeves</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 4: Sfifa Trimming & Budget Range -->
+              <div class="form-row-2col">
+                <div class="form-group">
+                  <label class="form-label" for="select-sfifa">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M12 2v20"></path></svg>
+                    <span data-i18n="field_sfifa">Sfifa & Trimming Grade</span>
+                  </label>
+                  <div class="select-wrap">
+                    <select id="select-sfifa" class="form-select">
+                      <option value="sfifa_skalli" data-i18n="opt_sfifa_skalli">Pure Skalli Gold Thread Sfifa</option>
+                      <option value="sfifa_silver" data-i18n="opt_sfifa_silver">Silver Skalli with Sabra Silk</option>
+                      <option value="sfifa_dfina" data-i18n="opt_sfifa_dfina">Tone-on-Tone Handwoven Dfina</option>
+                      <option value="sfifa_zwak" data-i18n="opt_sfifa_zwak">Zwak El Maâlem 4-Ply Braiding</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="select-budget">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><path d="M12 18V6"></path></svg>
+                    <span data-i18n="field_budget">Budget Range</span>
+                  </label>
+                  <div class="select-wrap">
+                    <select id="select-budget" class="form-select">
+                      <option value="budget_1" data-i18n="opt_budget_1">8,000 - 12,000 MAD (€800 - €1,150)</option>
+                      <option value="budget_2" data-i18n="opt_budget_2">12,000 - 18,000 MAD (€1,150 - €1,750)</option>
+                      <option value="budget_3" data-i18n="opt_budget_3">18,000+ MAD (€1,750+ Haute Couture)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Generate Button -->
+              <button type="button" class="btn-generate-ai" id="btn-generate-ai" data-sc-magnet="0.25">
+                <span class="btn-sparkle">✦</span>
+                <span data-i18n="btn_generate">Generate My Design</span>
+              </button>
+
+              <p class="form-disclaimer" data-i18n="designer_disclaimer">
+                This feature is an AI-assisted design proposal and will be validated by a certified Moroccan Maâlem before production.
+              </p>
+            </form>
+          </div>
+
+          <!-- Right Column: AI Preview (Prototype) -->
+          <div class="designer-preview-wrap">
+            <div class="preview-card" id="preview-card" data-sc-in data-sc-tilt="6" data-sc-spotlight data-sc-parallax="0.04">
+              
+              <!-- Badge -->
+              <div class="preview-badge">
+                <span class="pulse-dot"></span>
+                <span data-i18n="ai_preview_badge">AI Preview (Prototype)</span>
+              </div>
+
+              <!-- Loading Simulation Overlay -->
+              <div class="ai-loading-overlay" id="ai-loading-overlay">
+                <div class="ai-loading-spinner">
+                  <svg class="spinner-star" viewBox="0 0 100 100">
+                    <polygon points="50,5 64,36 95,50 64,64 50,95 36,64 5,50 36,36" fill="none" stroke="#D4AF37" stroke-width="4"/>
+                  </svg>
+                </div>
+                <div class="ai-loading-step" id="ai-loading-step">Analyzing ancestral Moroccan motifs...</div>
+                <div class="ai-progress-track">
+                  <div class="ai-progress-bar" id="ai-progress-bar"></div>
+                </div>
+              </div>
+
+              <!-- Main Prototype Visual -->
+              <div class="preview-main-image-wrap">
+                <img src="pic/caftan pic/ai generation photo/Gemini_Generated_Image_sc1v9jsc1v9jsc1v.jpg" alt="AI Generated Moroccan Caftan Prototype" id="ai-prototype-img">
+              </div>
+
+              <!-- Variation Thumbnails on the Right Edge -->
+              <div class="preview-thumbnails-stack" id="preview-thumbnails">
+                <div class="variation-thumb active" data-img="pic/caftan pic/ai generation photo/Gemini_Generated_Image_sc1v9jsc1v9jsc1v.jpg" data-title="Imperial Emerald">
+                  <img src="pic/caftan pic/ai generation photo/Gemini_Generated_Image_sc1v9jsc1v9jsc1v.jpg" alt="AI Emerald Prototype">
+                </div>
+                <div class="variation-thumb" data-img="pic/caftan pic/ai generation photo/Gemini_Generated_Image_le0wple0wple0wpl.jpg" data-title="Ivory Grace">
+                  <img src="pic/caftan pic/ai generation photo/Gemini_Generated_Image_le0wple0wple0wpl.jpg" alt="AI Ivory Prototype">
+                </div>
+              </div>
+
+              <!-- Preview Bottom Spec Bar & Commission CTA -->
+              <div class="preview-footer-bar">
+                <div class="preview-spec-info">
+                  <div class="preview-spec-title" id="preview-active-title">Emerald Majesty • Takchita</div>
+                  <div class="preview-spec-sub" id="preview-active-sub" data-i18n="spec_atelier">Matched Atelier: Atelier El Fellah, Tangier</div>
+                </div>
+                <button type="button" class="btn-commission-ai" id="btn-commission-ai" data-sc-magnet="0.25">
+                  <span data-i18n="btn_commission">Commission This Design</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Collection Section (Issue 06: Discover Moroccan Caftans) -->
+    <section id="collection" class="collection-section" data-sc-act="flow">
+      <div class="container">
+        
+        <div class="section-top-row" data-sc-in>
+          <div>
+            <span class="section-label" data-i18n="coll_label">OUR COLLECTION</span>
+            <h2 class="section-title" data-i18n="coll_title">Discover Moroccan Caftans</h2>
+          </div>
+          <a href="collection.html" class="view-all-link" data-sc-magnet="0.2">
+            <span data-i18n="coll_view_all">View All Collection</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <!-- 5 Cards Collection Grid matching website desgin.png -->
+        <div class="collection-grid" id="collection-grid" data-sc-stagger="70">
+          
+          <!-- Card 1 -->
+          <div class="collection-card" data-id="4" data-sc-in data-sc-tilt="6" data-sc-spotlight>
+            <div class="collection-card-img-wrap">
+              <img src="caftan pic/7b6b11d229071c1fb2813a2f88868080.jpg" alt="Royal Emerald Caftan">
+              <button class="card-heart-btn" aria-label="Add to favorites">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-card-body">
+              <h3 class="card-product-title">Royal Emerald</h3>
+              <p class="card-product-inspired">Inspired by <em>The Royal Court</em></p>
+              <p class="card-product-atelier">By: Atelier El Fellah</p>
+              <div class="card-product-price">€ 1,200</div>
+              <button type="button" class="btn-card-discover" data-id="4" data-i18n="btn_discover">Discover This Caftan</button>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="collection-card" data-id="3" data-sc-in data-sc-tilt="6" data-sc-spotlight>
+            <div class="collection-card-img-wrap">
+              <img src="caftan pic/532ca6c399bde52fa69cda53b5b5214f.jpg" alt="Ocean Blue Caftan">
+              <button class="card-heart-btn" aria-label="Add to favorites">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-card-body">
+              <h3 class="card-product-title">Ocean Blue</h3>
+              <p class="card-product-inspired">Inspired by <em>Popular Andalus</em></p>
+              <p class="card-product-atelier">By: Atelier Boujumaar</p>
+              <div class="card-product-price">€ 1,050</div>
+              <button type="button" class="btn-card-discover" data-id="3" data-i18n="btn_discover">Discover This Caftan</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="collection-card" data-id="2" data-sc-in data-sc-tilt="6" data-sc-spotlight>
+            <div class="collection-card-img-wrap">
+              <img src="caftan pic/4105534d840dd39605a4b26c77c59847.jpg" alt="Burgundy Elegance Caftan">
+              <button class="card-heart-btn" aria-label="Add to favorites">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-card-body">
+              <h3 class="card-product-title">Burgundy Elegance</h3>
+              <p class="card-product-inspired">Modern <em>Medfoun</em> Cut</p>
+              <p class="card-product-atelier">By: Noisoy Aetina</p>
+              <div class="card-product-price">€ 900</div>
+              <button type="button" class="btn-card-discover" data-id="2" data-i18n="btn_discover">Discover This Caftan</button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="collection-card" data-id="1" data-sc-in data-sc-tilt="6" data-sc-spotlight>
+            <div class="collection-card-img-wrap">
+              <img src="caftan pic/1d4cb6461e3eaec0a5c466807b8100b1.jpg" alt="Ivory Grace Caftan">
+              <button class="card-heart-btn" aria-label="Add to favorites">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-card-body">
+              <h3 class="card-product-title">Ivory Grace</h3>
+              <p class="card-product-inspired">Inspired by <em>Fez Dynasty</em></p>
+              <p class="card-product-atelier">By: Atelier Safaa</p>
+              <div class="card-product-price">€ 1,150</div>
+              <button type="button" class="btn-card-discover" data-id="1" data-i18n="btn_discover">Discover This Caftan</button>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="collection-card" data-id="5" data-sc-in data-sc-tilt="6" data-sc-spotlight>
+            <div class="collection-card-img-wrap">
+              <img src="caftan pic/9a9b2606d5bb8b6d1ec844109ae26279.jpg" alt="Golden Heritage Caftan">
+              <button class="card-heart-btn" aria-label="Add to favorites">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+              </button>
+            </div>
+            <div class="collection-card-body">
+              <h3 class="card-product-title">Golden Heritage</h3>
+              <p class="card-product-inspired">Traditional <em>Royal Touch</em></p>
+              <p class="card-product-atelier">By: Atelier Saadane</p>
+              <div class="card-product-price text-gold" data-i18n="btn_quote">Request a Quote</div>
+              <button type="button" class="btn-card-discover" data-id="5" data-i18n="btn_discover">Discover This Caftan</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Artisans Section (Issue 06: Behind Every Caftan, There Is a Story) -->
+    <section id="artisans" class="artisans-section" data-sc-act="flow">
+      <div class="container">
+        <div class="artisans-split-layout">
+          
+          <!-- Master Artisan Visual -->
+          <div class="artisan-portrait-wrap" data-sc-in data-sc-parallax="0.08">
+            <div class="artisan-img-frame">
+              <!-- Traditional Moroccan Master Artisan (Maâlem Omar) in Djellaba working in courtyard workshop -->
+              <img src="artisan workshops.webp" alt="Moroccan Master Artisan Maâlem Omar in Tangier" class="artisan-main-photo" data-sc-reveal="up">
+              <div class="artisan-photo-badge">
+                <div class="photo-badge-title">Maâlem Omar El Fellah</div>
+                <div class="photo-badge-sub">35 Years Master of Tarz & Sfifa • Tangier Atelier</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Artisan Story Copy & Disciplines List -->
+          <div class="artisan-content-wrap" data-sc-in>
+            <span class="section-label" data-i18n="art_label">OUR ARTISANS</span>
+            <h2 class="section-title" data-i18n="art_title">Behind Every Caftan, There Is a Story.</h2>
+            <p class="section-desc" data-i18n="art_desc">
+              NASSIJ AI connects Moroccan artisans with new customers, showcases their exceptional skills, and helps preserve traditional knowledge for future generations.
+            </p>
+
+            <button type="button" class="btn-primary btn-meet-artisans" id="btn-open-artisan-drawer" data-sc-magnet="0.25">
+              <span data-i18n="art_cta">Meet Our Artisans</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+
+            <!-- Craft Guild Categories -->
+            <div class="craft-guilds-list" id="craft-guilds-list" data-sc-stagger="60">
+              
+              <div class="craft-item-card" data-craft="tailors" data-sc-in data-sc-tilt="4" data-sc-spotlight>
+                <div class="craft-icon-circle">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="3"></circle><circle cx="6" cy="18" r="3"></circle><line x1="20" y1="4" x2="8.12" y2="15.88"></line><line x1="14.47" y1="14.48" x2="20" y2="20"></line><line x1="8.12" y1="8.12" x2="12" y2="12"></line></svg>
+                </div>
+                <div class="craft-item-info">
+                  <div class="craft-item-name" data-i18n="cat_tailors">Master Tailors (Khayyatin)</div>
+                  <div class="craft-item-meta">Cutting & Architectural Caftan Drafting</div>
+                </div>
+                <div class="craft-arrow">→</div>
+              </div>
+
+              <div class="craft-item-card" data-craft="embroiderers" data-sc-in data-sc-tilt="4" data-sc-spotlight>
+                <div class="craft-icon-circle">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v12M6 12h12"/></svg>
+                </div>
+                <div class="craft-item-info">
+                  <div class="craft-item-name" data-i18n="cat_embroiderers">Embroiderers (M'allemat Tarz)</div>
+                  <div class="craft-item-meta">Tarz Fassi, Tarz Rbati & Gold Majboud</div>
+                </div>
+                <div class="craft-arrow">→</div>
+              </div>
+
+              <div class="craft-item-card" data-craft="sfifa" data-sc-in data-sc-tilt="4" data-sc-spotlight>
+                <div class="craft-icon-circle">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
+                </div>
+                <div class="craft-item-info">
+                  <div class="craft-item-name" data-i18n="cat_sfifa">Sfifa Specialists</div>
+                  <div class="craft-item-meta">Hand-Woven Silk & Pure Silver Trim Braiding</div>
+                </div>
+                <div class="craft-arrow">→</div>
+              </div>
+
+              <div class="craft-item-card" data-craft="aqad" data-sc-in data-sc-tilt="4" data-sc-spotlight>
+                <div class="craft-icon-circle">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><circle cx="6" cy="12" r="2"></circle><circle cx="18" cy="12" r="2"></circle></svg>
+                </div>
+                <div class="craft-item-info">
+                  <div class="craft-item-name" data-i18n="cat_aqad">Aqad Hand-Knotters</div>
+                  <div class="craft-item-meta">Spherical Sabra Silk Buttons (Over 100 per caftan)</div>
+                </div>
+                <div class="craft-arrow">→</div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Digital Heritage Museum Section (Issue 07: A Heritage Worth Preserving) -->
+    <section id="museum" class="museum-section" data-sc-act="flow">
+      <div class="container">
+        <div class="museum-split-layout">
+          
+          <!-- Archival Historical Photography Frame -->
+          <div class="museum-visual-wrap">
+            <div class="museum-vintage-frame" data-sc-in data-sc-parallax="0.08">
+              <!-- Historic Moroccan Heritage Museum Gallery -->
+              <img src="mesum pic.png" alt="Moroccan Caftan Heritage Museum Gallery" class="museum-archival-photo" data-sc-reveal="up">
+              <div class="vintage-overlay-tag">
+                <span class="vintage-year">EST. 1590 • ROYAL ARCHIVE</span>
+                <span class="vintage-title">Centuries of Ancestral Moroccan Couture</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Museum Content & Interactive Features -->
+          <div class="museum-content-wrap" data-sc-in>
+            <span class="section-label" data-i18n="mus_label">DIGITAL HERITAGE MUSEUM</span>
+            <h2 class="section-title" data-i18n="mus_title">A Heritage Worth Preserving.</h2>
+            <p class="section-desc" data-i18n="mus_desc">
+              Explore the rich history of Moroccan caftans and the enduring craftsmanship, from traditional techniques to their cultural significance.
+            </p>
+
+            <a href="museum.html" class="btn-primary btn-explore-museum" id="btn-explore-museum" data-sc-magnet="0.25">
+              <span data-i18n="mus_cta">Explore the Museum</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+
+            <!-- Museum Features List -->
+            <div class="museum-features-list" data-sc-stagger="60">
+              
+              <div class="museum-feat-row" data-tab="embroidery" data-sc-in data-sc-tilt="4" data-sc-spotlight>
+                <div class="feat-icon-gold">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div class="feat-text" data-i18n="feat_craft">Traditional Craftsmanship</div>
+              </div>
+
+              <div class="museum-feat-row" data-tab="embroidery" data-sc-in data-sc-tilt="4" data-sc-spotlight>
+                <div class="feat-icon-gold">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 3a9 9 0 0 0 9 9M12 21a9 9 0 0 0-9-9"/></svg>
+                </div>
+                <div class="feat-text" data-i18n="feat_emb">Embroidery Techniques</div>
+              </div>
+
+              <div class="museum-feat-row" data-tab="textiles" data-sc-in data-sc-tilt="4" data-sc-spotlight>
+                <div class="feat-icon-gold">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                </div>
+                <div class="feat-text" data-i18n="feat_mat">Materials & Textiles</div>
+              </div>
+
+              <div class="museum-feat-row" data-tab="history" data-sc-in data-sc-tilt="4" data-sc-spotlight>
+                <div class="feat-icon-gold">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                </div>
+                <div class="feat-text" data-i18n="feat_hist">Historical Photos & Oral Histories</div>
+              </div>
+
+              <div class="museum-feat-row" data-tab="history" data-sc-in data-sc-tilt="4" data-sc-spotlight>
+                <div class="feat-icon-gold">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <div class="feat-text" data-i18n="feat_stories">Stories from Moroccan Artisans</div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Sustainable Fashion Section (Issue 09: Green Caftan) -->
+    <section id="sustainability" class="sustainability-section" data-sc-act="flow">
+      <div class="container">
+        
+        <div class="sustainability-header-center" data-sc-in>
+          <span class="section-label" data-i18n="sust_label">SUSTAINABLE FASHION</span>
+          <h2 class="section-title" data-i18n="sust_title">Tradition Meets Sustainability.</h2>
+          <p class="section-desc" style="margin-left: auto; margin-right: auto;" data-i18n="sust_desc">
+            We are committed to a more responsible future by combining traditional craftsmanship with sustainable practices.
+          </p>
+        </div>
+
+        <!-- 5 Pillars Row matching website desgin.png -->
+        <div class="sustainability-pillars-row" data-sc-stagger="60">
+          
+          <div class="pillar-card" data-sc-in data-sc-tilt="5" data-sc-spotlight>
+            <div class="pillar-icon-wrap">
+              <!-- Made-to-order Icon -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <div class="pillar-name" data-i18n="sust_1">Made-to-order Production</div>
+          </div>
+
+          <div class="pillar-card" data-sc-in data-sc-tilt="5" data-sc-spotlight>
+            <div class="pillar-icon-wrap">
+              <!-- Reduced Fabric Waste Icon -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            </div>
+            <div class="pillar-name" data-i18n="sust_2">Reduced Fabric Waste</div>
+          </div>
+
+          <div class="pillar-card" data-sc-in data-sc-tilt="5" data-sc-spotlight>
+            <div class="pillar-icon-wrap">
+              <!-- Support for Local Artisans Icon -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <div class="pillar-name" data-i18n="sust_3">Support for Local Artisans</div>
+          </div>
+
+          <div class="pillar-card" data-sc-in data-sc-tilt="5" data-sc-spotlight>
+            <div class="pillar-icon-wrap">
+              <!-- Responsible Material Choices Icon -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="pillar-name" data-i18n="sust_4">Responsible Material Choices</div>
+          </div>
+
+          <div class="pillar-card" data-sc-in data-sc-tilt="5" data-sc-spotlight>
+            <div class="pillar-icon-wrap">
+              <!-- Digital Preservation Icon -->
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            </div>
+            <div class="pillar-name" data-i18n="sust_5">Digital Preservation of Skills</div>
+          </div>
+
+        </div>
+
+        <!-- Animated Sustainability Counters Bar -->
+        <div class="sustainability-stats-banner" id="stats-banner">
+          <div class="stat-banner-item">
+            <div class="stat-banner-number" data-target="0" data-suffix="%">0%</div>
+            <div class="stat-banner-label" data-i18n="stat_deadstock">0% Deadstock Inventory</div>
+          </div>
+          <div class="stat-banner-item">
+            <div class="stat-banner-number" data-target="90" data-suffix="%">90%</div>
+            <div class="stat-banner-label" data-i18n="stat_payout">90% Direct Artisan Payout</div>
+          </div>
+          <div class="stat-banner-item">
+            <div class="stat-banner-number" data-target="35" data-suffix="%">35%</div>
+            <div class="stat-banner-label" data-i18n="stat_waste">35% Fabric Scrap Reduction</div>
+          </div>
+          <div class="stat-banner-item">
+            <div class="stat-banner-number" data-target="100" data-suffix="%">100%</div>
+            <div class="stat-banner-label" data-i18n="stat_traceable">100% Verified Provenance</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer matching website desgin.png
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <div class="footer-logo">
+            <img src="logo-emblem-light.png" alt="NASSIJ AI Emblem" class="footer-logo-img">
+            <div class="footer-brand-name">
+              <span>NASSIJ AI</span>
+              <span class="footer-arabic">نسيج</span>
+            </div>
+          </div>
+          <p class="footer-copy" data-i18n="footer_copy">© 2026 NASSIJ AI Morocco. All rights reserved.</p>
+          <div class="footer-tagline-script" data-i18n="footer_tagline">
+            Crafted by Moroccan Hands. Inspired by Moroccan Heritage. Enhanced by AI.
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+            <li><a href="#collection" data-i18n="nav_discover">Discover Caftans</a></li>
+            <li><a href="#ai-designer" data-i18n="nav_designer">AI Designer</a></li>
+            <li><a href="#artisans" data-i18n="nav_artisans">Our Artisans</a></li>
+            <li><a href="#museum" data-i18n="nav_museum">Heritage Museum</a></li>
+            <li><a href="#sustainability" data-i18n="nav_about">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Contact Us</h4>
+          <div class="contact-entry">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+212 6 12 34 56 78</span>
+          </div>
+          <div class="contact-entry">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span data-i18n="contact_loc">Tangier & Fez, Morocco</span>
+          </div>
+          <div class="contact-entry" style="font-size: 0.8rem; color: var(--accent-gold-light); margin-top: 6px;">
+            <span>INNOVERT / CIDEAL Tangier Pilot</span>
+          </div>
+        </div>
+
+        <!-- Social & Legal Compliance -->
+        <div class="footer-social-col">
+          <h4 class="footer-col-title">Follow Us</h4>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+
+          <div class="footer-legal-links">
+            <a href="#" data-i18n="privacy_policy">Privacy Policy (Law 09-08)</a> • 
+            <a href="#" data-i18n="terms_conditions">Terms (Law 31-08)</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  </main>
+
+  <!-- Global Modals & Drawers Container -->
+  <div id="modal-container">
+    <!-- Populated by Modals (Caftan Story, Artisan Drawer, Digital Passport, Museum) -->
+  </div>
+
+  <!-- ScrollCraft Engine Runtime -->
+  <script src="scrollcraft.js"></script>
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

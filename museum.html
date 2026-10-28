@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Heritage Museum | NASSIJ AI MOROCCO</title>
+  <meta name="description" content="Explore ten centuries of Moroccan caftan craftsmanship. Interactive dynastic timeline, archival craft pillars, artisan oral histories, and cryptographic digital passport verification.">
+
+  <!-- Favicon Official Rosette Emblem -->
+  <link rel="icon" type="image/png" href="logo-emblem.png">
+
+  <!-- Google Fonts: Inter Tight, Inter, Caveat, Amiri, Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Caveat:wght@600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="museum-page-body">
+
+  <!-- ==========================================================================
+       Site Header & Universal Navigation
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" id="brand-logo" aria-label="NASSIJ AI Morocco Homepage">
+        <img src="logo.png" alt="NASSIJ AI Morocco" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="collection.html" class="nav-link" data-i18n="nav_discover">Discover Caftans</a>
+        <a href="index.html#ai-designer" class="nav-link" data-i18n="nav_designer">AI Designer</a>
+        <a href="index.html#artisans" class="nav-link" data-i18n="nav_artisans">Our Artisans</a>
+        <a href="museum.html" class="nav-link active" data-i18n="nav_museum">Heritage Museum</a>
+        <a href="index.html#sustainability" class="nav-link" data-i18n="nav_about">About Us</a>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+        <!-- Language Switcher Button -->
+        <button class="lang-toggle" id="lang-toggle-btn" aria-label="Switch Language / تغيير اللغة">
+          <svg class="flag-icon" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+            <rect width="900" height="600" fill="#c1272d"/>
+            <polygon points="450,165 478,252 569,252 495,305 524,393 450,340 376,393 405,305 331,252 422,252" fill="none" stroke="#006233" stroke-width="16"/>
+          </svg>
+          <span id="lang-btn-text">العربية</span>
+        </button>
+
+        <button class="btn-login" id="btn-login-modal" data-i18n="nav_login">Sign In</button>
+        <a href="collection.html" class="btn-primary" id="btn-get-started">
+          <span data-i18n="nav_discover">View Collection</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Museum Main Content
+       ========================================================================== -->
+  <main id="main-content" class="museum-page-main">
+
+    <!-- Immersive Museum Hero Section -->
+    <section class="museum-hero-section">
+      <div class="museum-hero-backdrop" style="background-image: url('mesum pic.png');">
+        <div class="museum-hero-overlay"></div>
+      </div>
+      <div class="container museum-hero-container">
+        <div class="museum-hero-content">
+          <h1 class="museum-hero-headline">
+            <span data-i18n="mus_hero_title_1">Ten Centuries of</span>
+            <span class="highlight-gold" data-i18n="mus_hero_title_2">Moroccan Couture Heritage.</span>
+          </h1>
+          <p class="museum-hero-description" data-i18n="mus_hero_sub">
+            From Almoravid Saharan silks to Saadian 24k gold Majboud, explore how Moroccan ancestral craftsmanship has been preserved, celebrated, and elevated across imperial dynasties into the digital era.
+          </p>
+
+          <!-- Quick Anchor Navigator -->
+          <div class="museum-quick-nav">
+            <a href="#dynasties" class="quick-nav-pill">
+              <span data-i18n="mus_nav_timeline">Dynastic Timeline (1062 - Present)</span>
+            </a>
+            <a href="#pillars" class="quick-nav-pill">
+              <span data-i18n="mus_nav_pillars">4 Craft Pillars</span>
+            </a>
+            <a href="#provenance" class="quick-nav-pill">
+              <span data-i18n="mus_nav_verify">Provenance Simulator</span>
+            </a>
+            <a href="#oral-archive" class="quick-nav-pill">
+              <span data-i18n="mus_nav_archive">Artisan Oral Archive</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 1: Interactive 4 Dynasties Timeline
+         ========================================================================== -->
+    <section class="museum-dynasty-section" id="dynasties">
+      <div class="container">
+        
+        <div class="section-title-wrap text-center">
+          <span class="badge-pill-gold" data-i18n="dynasty_section_badge">CHRONICLES OF MOROCCAN SPLENDOR</span>
+          <h2 class="section-heading" data-i18n="dynasty_section_title">The Four Imperial Dynasties</h2>
+          <p class="section-subheading" data-i18n="dynasty_section_sub">
+            Follow the evolutionary trajectory of the caftan through Moroccan imperial courts, trade routes, and guild foundations.
+          </p>
+        </div>
+
+        <!-- Dynasty Tab Navigation -->
+        <div class="dynasty-tabs-wrapper">
+          <div class="dynasty-tabs-track" role="tablist">
+            <button class="dynasty-tab-btn active" data-dynasty="almoravid" role="tab" aria-selected="true">
+              <span class="dynasty-tab-era">1062 – 1147</span>
+              <span class="dynasty-tab-name" data-i18n="dyn_almoravid_name">Almoravid Dynasty (المرابطون)</span>
+              <span class="dynasty-tab-theme" data-i18n="dyn_almoravid_theme">Saharan Silk & Early Tunics</span>
+            </button>
+            <button class="dynasty-tab-btn" data-dynasty="merinid" role="tab" aria-selected="false">
+              <span class="dynasty-tab-era">1248 – 1465</span>
+              <span class="dynasty-tab-name" data-i18n="dyn_merinid_name">Merinid Dynasty (المرينيون)</span>
+              <span class="dynasty-tab-theme" data-i18n="dyn_merinid_theme">The Golden Looms of Fez</span>
+            </button>
+            <button class="dynasty-tab-btn" data-dynasty="saadian" role="tab" aria-selected="false">
+              <span class="dynasty-tab-era">1549 – 1659</span>
+              <span class="dynasty-tab-name" data-i18n="dyn_saadian_name">Saadian Dynasty (السعديون)</span>
+              <span class="dynasty-tab-theme" data-i18n="dyn_saadian_theme">24k Gold Majboud & Takchita</span>
+            </button>
+            <button class="dynasty-tab-btn" data-dynasty="alaouite" role="tab" aria-selected="false">
+              <span class="dynasty-tab-era">1666 – Present</span>
+              <span class="dynasty-tab-name" data-i18n="dyn_alaouite_name">Alaouite Dynasty (العلويون)</span>
+              <span class="dynasty-tab-theme" data-i18n="dyn_alaouite_theme">Haute Couture & AI Heritage</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Dynasty Display Card Container -->
+        <div class="dynasty-display-card" id="dynasty-card-content">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 2: Four Master Craft Pillars Exhibition
+         ========================================================================== -->
+    <section class="museum-pillars-section" id="pillars">
+      <div class="container">
+        
+        <div class="section-title-wrap text-center">
+          <span class="badge-pill-gold" data-i18n="pillars_section_badge">SACRED GUILD ARTS</span>
+          <h2 class="section-heading" data-i18n="pillars_section_title">The Four Master Craft Pillars</h2>
+          <p class="section-subheading" data-i18n="pillars_section_sub">
+            The irreplaceable techniques passed exclusively from master (Maâlem) to apprentice over decades of physical discipline.
+          </p>
+        </div>
+
+        <div class="craft-pillars-grid">
+          
+          <!-- Pillar 1: Majboud Gold Bullion -->
+          <div class="pillar-card">
+            <div class="pillar-img-frame">
+              <img src="caftan pic/4105534d840dd39605a4b26c77c59847.jpg" alt="Majboud 24k Gold Embroidery" loading="lazy">
+              <span class="pillar-tag">GUILD: FEZ & MEKNES</span>
+            </div>
+            <div class="pillar-body">
+              <h3 class="pillar-title" data-i18n="pillar_1_title">24k Gold Majboud Bullion</h3>
+              <p class="pillar-desc" data-i18n="pillar_1_desc">
+                An ancestral technique where pure 24k Skalli gold thread is guided over thick parchment stencils using a polished cow-horn stylus (*Mizwed*), creating embossed architectural motifs on velvet and brocade.
+              </p>
+              <div class="pillar-meta">
+                <span>140+ Handcraft Hours</span>
+                <span>Pure Gold Skalli Thread</span>
+              </div>
+              <button type="button" class="btn-text-gold btn-explore-pillar" data-pillar="majboud">
+                <span data-i18n="btn_explore_craft">Explore Technique Archive →</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Pillar 2: Bencherif Brocade Handloom -->
+          <div class="pillar-card">
+            <div class="pillar-img-frame">
+              <img src="caftan pic/9a9b2606d5bb8b6d1ec844109ae26279.jpg" alt="Bencherif Drawloom Brocade" loading="lazy">
+              <span class="pillar-tag">GUILD: FEZ MEDINA</span>
+            </div>
+            <div class="pillar-body">
+              <h3 class="pillar-title" data-i18n="pillar_2_title">The Bencherif Brocade Loom</h3>
+              <p class="pillar-desc" data-i18n="pillar_2_desc">
+                Woven on centuries-old wooden drawlooms operated synchronously by two master weavers. The loom produces merely 20 centimeters of royal silk brocade per day, interlaced with authentic metallic gold threads.
+              </p>
+              <div class="pillar-meta">
+                <span>Est. 13th Century Fez</span>
+                <span>Natural Mulberry Silk</span>
+              </div>
+              <button type="button" class="btn-text-gold btn-explore-pillar" data-pillar="brocade">
+                <span data-i18n="btn_explore_craft">Explore Technique Archive →</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Sabra Silk Aqaad Knotting -->
+          <div class="pillar-card">
+            <div class="pillar-img-frame">
+              <img src="caftan pic/532ca6c399bde52fa69cda53b5b5214f.jpg" alt="Sabra Silk Aqaad Knotting" loading="lazy">
+              <span class="pillar-tag">GUILD: WOMEN'S COOPERATIVES</span>
+            </div>
+            <div class="pillar-body">
+              <h3 class="pillar-title" data-i18n="pillar_3_title">Hand-Knotted Sabra Aqaad</h3>
+              <p class="pillar-desc" data-i18n="pillar_3_desc">
+                Spherical buttons sculpted by hand from 100% biodegradable aloe vera silk without needles. Over 100 identical spherical knots run down the front of a ceremonial caftan, fastening it with royal poise.
+              </p>
+              <div class="pillar-meta">
+                <span>100% Aloe Vera Silk</span>
+                <span>120 Spherical Knots / Piece</span>
+              </div>
+              <button type="button" class="btn-text-gold btn-explore-pillar" data-pillar="aqad">
+                <span data-i18n="btn_explore_craft">Explore Technique Archive →</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Pillar 4: Sfifa & Mjadel Braiding -->
+          <div class="pillar-card">
+            <div class="pillar-img-frame">
+              <img src="caftan pic/7b6b11d229071c1fb2813a2f88868080.jpg" alt="Sfifa & Mjadel Braiding" loading="lazy">
+              <span class="pillar-tag">GUILD: TANGIER MEDINA</span>
+            </div>
+            <div class="pillar-body">
+              <h3 class="pillar-title" data-i18n="pillar_4_title">Sfifa & Mjadel Braiding</h3>
+              <p class="pillar-desc" data-i18n="pillar_4_desc">
+                The architectural spine of Moroccan garments. Continuous decorative ribbons woven with up to 12 strands of silk and gold wire, structurally binding the front placket, hem, and flared sleeves.
+              </p>
+              <div class="pillar-meta">
+                <span>24 Meters Handwoven Trim</span>
+                <span>4 to 12 Multi-Strand Weave</span>
+              </div>
+              <button type="button" class="btn-text-gold btn-explore-pillar" data-pillar="sfifa">
+                <span data-i18n="btn_explore_craft">Explore Technique Archive →</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 3: Interactive Cryptographic Provenance Simulator
+         ========================================================================== -->
+    <section class="museum-provenance-section" id="provenance">
+      <div class="container">
+        
+        <div class="provenance-simulator-card">
+          <div class="provenance-simulator-header">
+            <span class="badge-pill-gold" data-i18n="prov_badge">IMMUTABLE BLOCKCHAIN PROVENANCE</span>
+            <h2 class="provenance-title" data-i18n="prov_title">Digital Heritage Passport Verification Simulator</h2>
+            <p class="provenance-sub" data-i18n="prov_sub">
+              Every NASSIJ AI caftan is permanently minted with a cryptographic certificate documenting artisan identity, ethical compensation, fabric origin, and craft hours. Test the verification ledger below:
+            </p>
+          </div>
+
+          <!-- Input & Sample Presets -->
+          <div class="provenance-input-row">
+            <div class="provenance-input-box">
+              <label for="passport-input-code" data-i18n="lbl_passport_input">Enter Garment Digital Passport ID:</label>
+              <div class="input-with-button">
+                <input type="text" id="passport-input-code" value="MAR-FEZ-2026-0001" placeholder="e.g. MAR-FEZ-2026-0001" aria-label="Passport ID">
+                <button type="button" class="btn-primary" id="btn-verify-passport">
+                  <span data-i18n="btn_verify_now">Verify Provenance</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Quick Demo Presets -->
+            <div class="passport-presets-wrap">
+              <span class="presets-label" data-i18n="lbl_quick_presets">Sample Verified Passports:</span>
+              <div class="preset-buttons">
+                <button type="button" class="preset-btn" data-code="MAR-FEZ-2026-0001">MAR-FEZ-2026-0001 (Ivory Grace Bridal)</button>
+                <button type="button" class="preset-btn" data-code="MAR-TNG-2026-0002">MAR-TNG-2026-0002 (Royal Champagne)</button>
+                <button type="button" class="preset-btn" data-code="MAR-RBT-2026-0004">MAR-RBT-2026-0004 (Sage Emerald)</button>
+                <button type="button" class="preset-btn" data-code="MAR-TNG-2026-0007">MAR-TNG-2026-0007 (Silver Grey Mlifa)</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Live Scanning Animation Overlay -->
+          <div class="provenance-scan-progress" id="provenance-scan-bar" style="display: none;">
+            <div class="scan-bar-track">
+              <div class="scan-bar-fill" id="scan-progress-fill"></div>
+            </div>
+            <div class="scan-status-text" id="scan-status-text">Connecting to Tangier & Fez Guild Cryptographic Ledger...</div>
+          </div>
+
+          <!-- Verified Certificate Display Box -->
+          <div class="verified-certificate-card" id="verified-certificate-display">
+            <!-- Dynamic Certificate Content Populated by JS -->
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Section 4: Artisan Oral Archive & Medina Soundscapes
+         ========================================================================== -->
+    <section class="museum-archive-section" id="oral-archive">
+      <div class="container">
+        
+        <div class="section-title-wrap text-center">
+          <span class="badge-pill-gold" data-i18n="oral_badge">THE LIVING VOICES</span>
+          <h2 class="section-heading" data-i18n="oral_title">Artisan Oral Archive & Workshop Soundscapes</h2>
+          <p class="section-subheading" data-i18n="oral_sub">
+            Listen to recorded oral histories and authentic acoustic rhythms from the ancestral ateliers of Tangier Kasbah and Fez Medina.
+          </p>
+        </div>
+
+        <div class="archive-interactive-grid">
+          
+          <!-- Master Oral Testimony 1 -->
+          <div class="testimony-card">
+            <div class="testimony-avatar-row">
+              <img src="artisan workshops.webp" alt="Maâlem Omar El Fellah" class="testimony-avatar">
+              <div>
+                <h4 class="testimony-name">Maâlem Omar El Fellah</h4>
+                <div class="testimony-role">Master Tailor & Cutter • Tangier Kasbah (35 Years Craft)</div>
+              </div>
+            </div>
+            <blockquote class="testimony-quote" data-i18n="quote_maalam_omar">
+              “The caftan is not merely a garment we put on; it is a living historical parchment. Every stitch, every silk knot our fingers twist carries the breath of a master who taught another master centuries ago. By weaving AI into our craft today, we never replace the artisan’s hand—we give our ancestral heritage a global stage.”
+            </blockquote>
+            <div class="soundscape-player-card">
+              <div class="soundscape-info">
+                <span class="soundscape-title">Audio Archive #2026-TNG-08</span>
+                <span class="soundscape-length">Kasbah Atelier Studio • Tangier</span>
+              </div>
+              <button type="button" class="btn-play-soundscape" data-sound="loom">
+                <svg class="play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span data-i18n="btn_listen_loom">Listen to Loom & Atelier Rhythm</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Master Oral Testimony 2 -->
+          <div class="testimony-card">
+            <div class="testimony-avatar-row">
+              <img src="caftan pic/1d4cb6461e3eaec0a5c466807b8100b1.jpg" alt="M'allema Fatima Zohra Alami" class="testimony-avatar">
+              <div>
+                <h4 class="testimony-name">M'allema Fatima Zohra Alami</h4>
+                <div class="testimony-role">Grand Master of Tarz Fassi • Fez Guild of Embroiderers (28 Years)</div>
+              </div>
+            </div>
+            <blockquote class="testimony-quote" data-i18n="quote_mallema_fatima">
+              “In Tarz Fassi, the front and back of the embroidered silk must be perfectly indistinguishable. If you flip the cloth and can see a single knot or mistake, the piece is unholy. It demands absolute presence of mind—a form of prayer through silk.”
+            </blockquote>
+            <div class="soundscape-player-card">
+              <div class="soundscape-info">
+                <span class="soundscape-title">Audio Archive #2026-FEZ-14</span>
+                <span class="soundscape-length">Fez Medina Cooperative Guild</span>
+              </div>
+              <button type="button" class="btn-play-soundscape" data-sound="needle">
+                <svg class="play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span data-i18n="btn_listen_needle">Listen to Skalli Needle Whisper</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Museum Commission Prompt Banner -->
+    <section class="catalog-bespoke-cta-section">
+      <div class="container">
+        <div class="bespoke-cta-banner">
+          <div class="bespoke-cta-content">
+            <span class="badge-pill-gold" data-i18n="mus_cta_badge">FROM HERITAGE TO WARDROBE</span>
+            <h2 class="bespoke-cta-title" data-i18n="mus_cta_title">Commission a Piece of Moroccan History</h2>
+            <p class="bespoke-cta-sub" data-i18n="mus_cta_sub">
+              Own a museum-grade haute couture caftan woven with the exact ancestral stitches you just explored, tailored precisely to your measurements.
+            </p>
+            <div class="bespoke-cta-actions">
+              <a href="collection.html" class="btn-primary">
+                <span data-i18n="nav_discover">Explore Collection (14 Pieces)</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="index.html#ai-designer" class="btn-secondary-white">
+                <span data-i18n="btn_open_ai_designer">Launch AI Generative Studio</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <div class="footer-logo">
+            <img src="logo-emblem-light.png" alt="NASSIJ AI Emblem" class="footer-logo-img">
+            <div class="footer-brand-name">
+              <span>NASSIJ AI</span>
+              <span class="footer-arabic">نسيج</span>
+            </div>
+          </div>
+          <p class="footer-copy" data-i18n="footer_copy">© 2026 NASSIJ AI Morocco. All rights reserved.</p>
+          <div class="footer-tagline-script" data-i18n="footer_tagline">
+            Crafted by Moroccan Hands. Inspired by Moroccan Heritage. Enhanced by AI.
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="collection.html" data-i18n="nav_discover">Discover Caftans</a></li>
+            <li><a href="index.html#ai-designer" data-i18n="nav_designer">AI Designer</a></li>
+            <li><a href="index.html#artisans" data-i18n="nav_artisans">Our Artisans</a></li>
+            <li><a href="museum.html" data-i18n="nav_museum">Heritage Museum</a></li>
+            <li><a href="index.html#sustainability" data-i18n="nav_about">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Contact Us</h4>
+          <div class="contact-entry">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+212 6 12 34 56 78</span>
+          </div>
+          <div class="contact-entry">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span data-i18n="contact_loc">Tangier & Fez, Morocco</span>
+          </div>
+          <div class="contact-entry" style="font-size: 0.8rem; color: var(--accent-gold-light); margin-top: 6px;">
+            <span>INNOVERT / CIDEAL Tangier Pilot</span>
+          </div>
+        </div>
+
+        <!-- Social & Legal Compliance -->
+        <div class="footer-social-col">
+          <h4 class="footer-col-title">Follow Us</h4>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+
+          <div class="footer-legal-links">
+            <a href="#" data-i18n="privacy_policy">Privacy Policy (Law 09-08)</a> • 
+            <a href="#" data-i18n="terms_conditions">Terms (Law 31-08)</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global Modals & Drawers Container -->
+  <div id="modal-container">
+    <!-- Populated by Modals (Pillar Deep Dive, Digital Passport, Auth) -->
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Haute Couture Collection | NASSIJ AI MOROCCO</title>
+  <meta name="description" content="Explore 14 bespoke Moroccan caftans and takchitas handcrafted by master artisans in Tangier and Fez. Filter by silhouette, fabric, and region with verified digital provenance.">
+
+  <!-- Favicon Official Rosette Emblem -->
+  <link rel="icon" type="image/png" href="logo-emblem.png">
+
+  <!-- Google Fonts: Inter Tight, Inter, Caveat, Amiri, Tajawal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Caveat:wght@600&family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="collection-page-body">
+
+  <!-- ==========================================================================
+       Site Header & Universal Navigation
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" id="brand-logo" aria-label="NASSIJ AI Morocco Homepage">
+        <img src="logo.png" alt="NASSIJ AI Morocco" class="brand-logo-img">
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="collection.html" class="nav-link active" data-i18n="nav_discover">Discover Caftans</a>
+        <a href="index.html#ai-designer" class="nav-link" data-i18n="nav_designer">AI Designer</a>
+        <a href="index.html#artisans" class="nav-link" data-i18n="nav_artisans">Our Artisans</a>
+        <a href="museum.html" class="nav-link" data-i18n="nav_museum">Heritage Museum</a>
+        <a href="index.html#sustainability" class="nav-link" data-i18n="nav_about">About Us</a>
+      </nav>
+
+      <!-- Navigation Actions -->
+      <div class="nav-actions">
+        <!-- Language Switcher Button -->
+        <button class="lang-toggle" id="lang-toggle-btn" aria-label="Switch Language / تغيير اللغة">
+          <svg class="flag-icon" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+            <rect width="900" height="600" fill="#c1272d"/>
+            <polygon points="450,165 478,252 569,252 495,305 524,393 450,340 376,393 405,305 331,252 422,252" fill="none" stroke="#006233" stroke-width="16"/>
+          </svg>
+          <span id="lang-btn-text">العربية</span>
+        </button>
+
+        <button class="btn-login" id="btn-login-modal" data-i18n="nav_login">Sign In</button>
+        <a href="index.html#ai-designer" class="btn-primary" id="btn-get-started">
+          <span data-i18n="nav_cta">Design Your Own</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Collection Main Content
+       ========================================================================== -->
+  <main id="main-content" class="catalog-page-main">
+
+    <!-- Collection Hero Header -->
+    <section class="catalog-hero-section">
+      <div class="container">
+        <div class="catalog-hero-header">
+          <span class="badge-pill-gold" data-i18n="coll_page_badge">HAUTE COUTURE MOROCCAN CAFTANS</span>
+          <h1 class="catalog-hero-title">
+            <span data-i18n="coll_page_title_1">Ancestral Splendor,</span>
+            <span class="highlight-gold" data-i18n="coll_page_title_2">Curated for Royalty.</span>
+          </h1>
+          <p class="catalog-hero-sub" data-i18n="coll_page_sub">
+            Fourteen bespoke, certified museum-grade creations handcrafted by master Moroccan artisans across Tangier, Fez, and Rabat. Each creation is tailored to order with verified cryptographic provenance and 90% direct master compensation.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters & Catalog Explorer Section -->
+    <section class="catalog-controls-section" id="catalog-controls">
+      <div class="container">
+        <div class="catalog-controls-card">
+          
+          <!-- Top Row: Live Search & Silhouette Pills -->
+          <div class="controls-top-row">
+            <!-- Search Input -->
+            <div class="catalog-search-box">
+              <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="catalog-search-input" placeholder="Search by style, fabric, atelier or color..." data-i18n-ph="filter_search_ph" aria-label="Search caftans">
+              <button type="button" id="catalog-search-clear" class="search-clear-btn" aria-label="Clear search" style="display: none;">&times;</button>
+            </div>
+
+            <!-- Silhouette Pills -->
+            <div class="filter-pills-list" role="tablist" aria-label="Filter by silhouette">
+              <button class="filter-pill active" data-filter="all" data-i18n="filter_all">All Pieces</button>
+              <button class="filter-pill" data-filter="fassi" data-i18n="filter_fassi">Royal Fassi</button>
+              <button class="filter-pill" data-filter="bridal" data-i18n="filter_bridal">Bridal Takchita</button>
+              <button class="filter-pill" data-filter="modern" data-i18n="filter_modern">Modern Slim</button>
+              <button class="filter-pill" data-filter="cape" data-i18n="filter_cape">Imperial Cape</button>
+              <button class="filter-pill" data-filter="velvet" data-i18n="filter_velvet">Velvet & Mlifa</button>
+            </div>
+          </div>
+
+          <!-- Secondary Row: Dropdowns (Region, Fabric, Price, Sort) -->
+          <div class="controls-secondary-row">
+            <div class="filter-select-group">
+              <label for="filter-region" data-i18n="lbl_filter_region">Atelier Region</label>
+              <select id="filter-region" class="catalog-select">
+                <option value="all" data-i18n="opt_region_all">All Moroccan Guilds</option>
+                <option value="Tangier">Tangier Kasbah</option>
+                <option value="Fez">Fez Medina</option>
+                <option value="Rabat">Rabat Andalusian</option>
+                <option value="Casablanca">Casablanca Modern</option>
+              </select>
+            </div>
+
+            <div class="filter-select-group">
+              <label for="filter-fabric" data-i18n="lbl_filter_fabric">Noble Fabric</label>
+              <select id="filter-fabric" class="catalog-select">
+                <option value="all" data-i18n="opt_fabric_all">All Noble Textiles</option>
+                <option value="brocade">Pure Silk Brocade</option>
+                <option value="velvet">Mobra Silk Velvet</option>
+                <option value="duchesse">Italian Duchesse Satin</option>
+                <option value="crepe">Silk Crepe & Organza</option>
+                <option value="mlifa">Cashmere-Wool Mlifa</option>
+              </select>
+            </div>
+
+            <div class="filter-select-group">
+              <label for="filter-price" data-i18n="lbl_filter_price">Price Range</label>
+              <select id="filter-price" class="catalog-select">
+                <option value="all" data-i18n="opt_price_all">All Price Ranges</option>
+                <option value="under-1100">Under € 1,100 (< 11,500 MAD)</option>
+                <option value="1100-1400">€ 1,100 - € 1,400</option>
+                <option value="above-1400">€ 1,400+ Haute Couture</option>
+              </select>
+            </div>
+
+            <div class="filter-select-group">
+              <label for="filter-sort" data-i18n="lbl_filter_sort">Sort Order</label>
+              <select id="filter-sort" class="catalog-select">
+                <option value="featured" data-i18n="sort_featured">Curated Collection</option>
+                <option value="price-asc" data-i18n="sort_price_asc">Price: Low to High</option>
+                <option value="price-desc" data-i18n="sort_price_desc">Price: High to Low</option>
+                <option value="lead-time" data-i18n="sort_lead_time">Crafting Time: Fast to Bespoke</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Bottom Meta Bar: Results Count + Reset -->
+          <div class="controls-meta-bar">
+            <div class="results-counter">
+              <span id="results-count-number">14</span>
+              <span data-i18n="results_text">Haute Couture Pieces Available</span>
+            </div>
+            <button type="button" id="btn-reset-filters" class="btn-text-gold" style="display: none;" data-i18n="btn_reset_filters">
+              ↺ Reset All Filters
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 14 Caftan Cards Grid -->
+    <section class="catalog-grid-section">
+      <div class="container">
+        
+        <!-- Active Filter Indicator Bar (Hidden if default) -->
+        <div id="catalog-active-filter-tags" class="active-filter-tags-wrap" style="display: none;"></div>
+
+        <!-- The Catalog Grid -->
+        <div class="collection-cards-grid" id="catalog-cards-container">
+          <!-- Populated by JavaScript and statically provided for instant SEO & fast paint -->
+        </div>
+
+        <!-- Empty State (Shown if no search matches) -->
+        <div class="catalog-empty-state" id="catalog-empty-state" style="display: none;">
+          <div class="empty-state-symbol">🏛️</div>
+          <h3 data-i18n="empty_title">No Caftans Matched Your Criteria</h3>
+          <p data-i18n="empty_desc">Try clearing your filters or search terms, or design your bespoke vision with our AI designer.</p>
+          <button type="button" class="btn-primary" id="btn-empty-reset" style="margin-top: 16px;">
+            <span data-i18n="btn_reset_filters">Reset Filters</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Bespoke Co-Creation CTA Banner -->
+    <section class="catalog-bespoke-cta-section">
+      <div class="container">
+        <div class="bespoke-cta-banner">
+          <div class="bespoke-cta-content">
+            <span class="badge-pill-gold" data-i18n="bespoke_badge">BESPOKE ATELIER COMMISSION</span>
+            <h2 class="bespoke-cta-title" data-i18n="bespoke_title">Envisioning a One-of-a-Kind Imperial Piece?</h2>
+            <p class="bespoke-cta-sub" data-i18n="bespoke_sub">
+              Our AI Studio allows you to customize embroidery schools, noble fabrics, Mdamma belt filigree, and sleeve cuts, co-creating directly with certified master artisans in Tangier and Fez.
+            </p>
+            <div class="bespoke-cta-actions">
+              <a href="index.html#ai-designer" class="btn-primary">
+                <span data-i18n="btn_open_ai_designer">Launch AI Generative Studio</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="museum.html" class="btn-secondary-white">
+                <span data-i18n="btn_visit_museum">Visit Heritage Museum</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <div class="footer-logo">
+            <img src="logo-emblem-light.png" alt="NASSIJ AI Emblem" class="footer-logo-img">
+            <div class="footer-brand-name">
+              <span>NASSIJ AI</span>
+              <span class="footer-arabic">نسيج</span>
+            </div>
+          </div>
+          <p class="footer-copy" data-i18n="footer_copy">© 2026 NASSIJ AI Morocco. All rights reserved.</p>
+          <div class="footer-tagline-script" data-i18n="footer_tagline">
+            Crafted by Moroccan Hands. Inspired by Moroccan Heritage. Enhanced by AI.
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="collection.html" data-i18n="nav_discover">Discover Caftans</a></li>
+            <li><a href="index.html#ai-designer" data-i18n="nav_designer">AI Designer</a></li>
+            <li><a href="index.html#artisans" data-i18n="nav_artisans">Our Artisans</a></li>
+            <li><a href="museum.html" data-i18n="nav_museum">Heritage Museum</a></li>
+            <li><a href="index.html#sustainability" data-i18n="nav_about">About Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Contact Us</h4>
+          <div class="contact-entry">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+212 6 12 34 56 78</span>
+          </div>
+          <div class="contact-entry">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span data-i18n="contact_loc">Tangier & Fez, Morocco</span>
+          </div>
+          <div class="contact-entry" style="font-size: 0.8rem; color: var(--accent-gold-light); margin-top: 6px;">
+            <span>INNOVERT / CIDEAL Tangier Pilot</span>
+          </div>
+        </div>
+
+        <!-- Social & Legal Compliance -->
+        <div class="footer-social-col">
+          <h4 class="footer-col-title">Follow Us</h4>
+          <div class="footer-social-icons">
+            <a href="#" class="social-icon-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </a>
+            <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+          </div>
+
+          <div class="footer-legal-links">
+            <a href="#" data-i18n="privacy_policy">Privacy Policy (Law 09-08)</a> • 
+            <a href="#" data-i18n="terms_conditions">Terms (Law 31-08)</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Global Modals & Drawers Container -->
+  <div id="modal-container">
+    <!-- Populated by Modals (Caftan Story, Artisan Drawer, Digital Passport, Auth) -->
+  </div>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
